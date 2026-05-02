@@ -1,0 +1,351 @@
+[
+    {
+        "context": "Editor",
+        "bindings": {
+            "f3": "editor::GoToDiagnostic"
+        }
+    },
+    {
+        "context": "Editor",
+        "unbind": {
+            "f2": "editor::GoToDiagnostic"
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "f2": "editor::Rename"
+        }
+    },
+    {
+        "unbind": {
+            "ctrl-p": "menu::SelectPrevious"
+        }
+    },
+    {
+        "unbind": {
+            "ctrl-shift-w": "workspace::CloseWindow"
+        }
+    },
+    {
+        "context": "KeymapEditor",
+        "unbind": {
+            "ctrl-e": "zed::OpenKeymapFile"
+        }
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-e": "file_finder::Toggle"
+        }
+    },
+    {
+        "context": "Editor && mode == full",
+        "unbind": {
+            "ctrl-e": "file_finder::Toggle"
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-e": "editor::SelectLargerSyntaxNode"
+        }
+    },
+    {
+        "context": "Editor",
+        "unbind": {
+            "ctrl-w": "editor::SelectLargerSyntaxNode"
+        }
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-shift-r": [
+                "pane::DeploySearch",
+                {
+                    "replace_enabled": true
+                }
+            ]
+        }
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-shift-#": "agent::ToggleFocus"
+        }
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-n": "project_symbols::Toggle"
+        }
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-alt-shift-n": "project_symbols::Toggle"
+        }
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-shift-a": "command_palette::Toggle"
+        }
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "f1": "command_palette::Toggle"
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-7": [
+                "editor::ToggleComments",
+                {
+                    "advance_downwards": false
+                }
+            ]
+        }
+    },
+    {
+        "context": "Editor",
+        "unbind": {
+            "ctrl-k ctrl-c": [
+                "editor::ToggleComments",
+                {
+                    "advance_downwards": false
+                }
+            ]
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-alt-7": "editor::ToggleBlockComments"
+        }
+    },
+    {
+        "context": "Editor",
+        "unbind": {
+            "alt-shift-a": "editor::ToggleBlockComments"
+        }
+    },
+    {
+        "unbind": {
+            "ctrl-o": "workspace::OpenFiles"
+        }
+    },
+    {
+        "context": "Editor && mode == full",
+        "bindings": {
+            "ctrl-o": "outline::Toggle"
+        }
+    },
+    {
+        "context": "Editor && mode == full",
+        "unbind": {
+            "ctrl-shift-o": "outline::Toggle"
+        }
+    },
+    {
+        "context": "Pane",
+        "bindings": {
+            "ctrl-shift-m": "diagnostics::Deploy"
+        }
+    },
+    {
+        "context": "Editor",
+        "unbind": {
+            "shift-f2": "editor::GoToPreviousDiagnostic"
+        }
+    },
+    {
+        "context": "Editor",
+        "unbind": {
+            "ctrl-d": "editor::DuplicateSelection"
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-d": [
+                "editor::SelectNext",
+                {
+                    "replace_newest": false
+                }
+            ]
+        }
+    },
+    {
+        "context": "Editor",
+        "unbind": {
+            "alt-shift-up": "editor::MoveLineUp"
+        }
+    },
+    {
+        "context": "Editor",
+        "unbind": {
+            "alt-shift-down": "editor::MoveLineDown"
+        }
+    },
+    {
+        "context": "Editor",
+        "unbind": {
+            "ctrl-alt-shift-up": "editor::GoToPreviousHunk"
+        }
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-k": "git_panel::ToggleFocus"
+        }
+    },
+    {
+        "context": "Workspace || (Editor && mode == full)",
+        "bindings": {
+            "ctrl-p": "file_finder::Toggle"
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-shift-a": "editor::SelectAllMatches"
+        }
+    },
+    {
+        "context": "Editor",
+        "unbind": {
+            "ctrl-shift-l": "editor::SelectAllMatches"
+        }
+    },
+    {
+        "context": "Editor",
+        "unbind": {
+            "ctrl-shift-k": "editor::DeleteLine"
+        }
+    },
+    {
+        "unbind": {
+            "ctrl-shift-i": "edit_prediction::ToggleMenu"
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-shift-i": "workspace::ActivatePaneUp"
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-shift-k": "workspace::ActivatePaneDown"
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-shift-j": "workspace::ActivatePaneLeft"
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-shift-l": "workspace::ActivatePaneRight"
+        }
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-b": "workspace::ToggleLeftDock"
+        }
+    },
+    {
+        "context": "Editor && mode == full",
+        "unbind": {
+            "ctrl-shift-n": "file_finder::Toggle"
+        }
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-shift-n": "file_finder::Toggle"
+        }
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-alt-n": "file_finder::Toggle"
+        }
+    },
+    {
+        "context": "Editor && mode == full",
+        "unbind": {
+            "ctrl-alt-n": "file_finder::Toggle"
+        }
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-alt-b": "workspace::ToggleRightDock"
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-shift-g": "git_panel::Toggle"
+        }
+    },
+    {
+        "bindings": {
+            "ctrl-shift-e": "project_panel::Toggle"
+        }
+    },
+    {
+        "bindings": {
+            "ctrl-shift-d": "debug_panel::Toggle"
+        }
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-shift-d": "debug_panel::ToggleFocus"
+        }
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-j": "workspace::ToggleBottomDock"
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-i": "agent::Toggle"
+        }
+    },
+    {
+        "context": "Editor && mode == full",
+        "unbind": {
+            "ctrl-r": [
+                "buffer_search::Deploy",
+                {
+                    "replace_enabled": true
+                }
+            ]
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-j": "editor::JoinLines"
+        }
+    },
+    {
+        "context": "Editor",
+        "unbind": {
+            "ctrl-shift-j": "editor::JoinLines"
+        }
+    }
+]
